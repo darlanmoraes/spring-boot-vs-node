@@ -13,7 +13,7 @@ if (cluster.isMaster) {
       MongoClient = require('mongodb').MongoClient;
 
   var person;
-  var url = 'mongodb://localhost:27017/db';
+  var url = 'mongodb://mongo:27017/db';
   MongoClient.connect(url, function(err, db) {
     assert.equal(null, err);
     console.log("Connected correctly to server.");
